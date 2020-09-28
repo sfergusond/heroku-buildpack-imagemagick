@@ -51,7 +51,7 @@ if [ ! -f $CACHE_FILE ]; then
 else
   # cache exists, extract it
   echo "-----> Extracting ImageMagick $CACHE_FILE => $VENDOR_DIR"
-  mkdir -p "$BUILD_DIR"
+  mkdir -p "$VENDOR_DIR"
   tar xzf $CACHE_FILE -C $VENDOR_DIR
 fi
 
